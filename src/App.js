@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Aboutme from './components/challenges/day01/Aboutme';
+import Home from './components/Home';
+import Footer from './components/Footer';
 
+// this is a root component
+// parent function
 function App() {
+  // JS above return statement can be injected into JSX using {}
+  // const name = 'Ryan';
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header /> {/* this is how you mount a component */}
+      <Aboutme /> {/* child function */}
+      <Home />
+      <Footer />
     </div>
   );
 }
