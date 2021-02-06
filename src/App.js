@@ -3,6 +3,8 @@ import Header from './components/Header';
 import Aboutme from './components/challenges/day01/Aboutme';
 import Home from './components/Home';
 import Footer from './components/Footer';
+import MortyParent from './components/morty/MortyParent';
+import RandomJoke from './components/challenges/day04challenge/RandomJoke';
 
 // this is a root component
 // parent function
@@ -11,11 +13,8 @@ function App() {
   // const name = 'Ryan';
 
   return (
-    <div className="App">
-      <Header /> {/* this is how you mount a component */}
-      <Aboutme /> {/* child function */}
-      <Home />
-      <Footer />
+    <div>
+      <RandomJoke />
     </div>
   );
 }
